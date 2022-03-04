@@ -1,0 +1,56 @@
+// Fonts
+
+@import url('dwaw');
+
+// Variables
+
+$primary-font: dwa;
+$secondary-font: dwd;
+$primary-color: #E51515;
+$secondary-color: #14151A;
+$date-color: #FFB320;
+$comment-color: #08ABBD;
+$grey-color: #9F9F9F;
+$light-color: #FEFEFE;
+$general-transition: all .5s;
+
+
+// Utilities
+
+.bg{
+    &-dark{
+        background-color: $secondary-color;
+    }
+
+    &-light{
+        background-color: $primary-color;
+    }
+}
+
+.ml{
+    &-2{
+        margin-left: 2rem;
+    }
+}
+
+
+.text-light{
+    color: $light-color;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-primary{
+    color: $primary-color;
+}
+
+
+// Mixins
+
+@mixin flex-display ($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
